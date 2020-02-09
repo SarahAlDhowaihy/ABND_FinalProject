@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- floating action button -->
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Common values used throughout the app -->
+    <dimen name="margin">16dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <!-- texts size -->
+    <dimen name="label_text_size">14sp</dimen>
+    <!--quantity buttons size -->
+    <dimen name="quantity_buttons_size">26dp</dimen>
+    <!-- TextView in editor -->
+    <dimen name="width_text_view">0dp</dimen>
+    <!-- Image view size -->
+    <dimen name="image_size">200dp</dimen>
+</resources>

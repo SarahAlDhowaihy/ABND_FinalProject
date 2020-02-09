@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <!--Title text for empty view -->
+    <string name="empty_view_title_text"> No, products in the inventory ! </string>
+    <!-- Subtitle text for the empty view -->
+    <string name="empty_view_subtitle_text"> Get started by adding a product =) </string>
+    <!-- menu option in inventory activity -->
+    <string name="action_delete_all">Delete All Products</string>
+    <!-- menu options in details activity -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <!-- Titles of details activity -->
+    <string name="details_activity_title_new_product">Add New Product</string>
+    <string name="details_activity_title_view_product">View The Product</string>
+    <string name="details_activity_title_edit_product">Edit Product</string>
+    <!-- Toast messages -->
+    <string name="insert_product_successful">Product saved</string>
+    <string name="insert_product_failed">Error with saving product</string>
+    <string name="update_product_successful">Product updated</string>
+    <string name="update_product_failed">Error with updating product</string>
+    <string name="delete_product_successful">Product deleted</string>
+    <string name="delete_product_failed">Error with deleting product</string>
+    <!-- Dialog -->
+    <string name="unsaved_dialog">Discard Your Changes and Quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog">Are you sure you want to Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <!-- Details Activity XML -->
+    <string name="hint_product_image">File name</string>
+    <string name="label_supplier">Supplier information</string>
+    <string name="label_image">Product Image</string>
+    <string name="label_overview">Overview</string>
+    <string name="order_button_text">ORDER</string>
+    <string name="upload_image_text">UPLOAD</string>
+    <!-- Product hent -->
+    <string name="name_hint">Product Name ,Ex: Table</string>
+    <string name="price_hint">Price, Ex: 5 </string>
+    <string name="quantity_hint"> Quantity , Ex: 6 </string>
+    <string name="supplier_name_hint">Supplier Name , Ex: Sarah</string>
+    <string name="supplier_phone_hint">SupplierPhone Ex:0123456789 </string>
+    <!-- Product units -->
+    <string name="price_units">$</string>
+    <string name="quantity_units">pieces</string>
+    <!--List item XML -->
+    <string name="sale_button_text">SALE</string>
+    <!-- Product information -->
+    <string name="product_name_text">Name</string>
+    <string name="product_quantity_text">Quantity</string>
+    <string name="product_price_text">Price</string>
+    <string name="product_supplier_name_text">Supplier Name</string>
+    <string name="product_supplier_phone_text">Supplier Phone Number</string>
+    <!-- Error Toast Massage -->
+    <string name="null_name">Product requires a name</string>
+    <string name="null_price">You should enter valid price </string>
+    <string name="null_image">Product requires a image</string>
+    <string name="null_quantity">You should enter valid quantity</string>
+    <string name="null_supplier_name">Product requires a supplier name </string>
+    <string name="null_supplier_phone">You should enter valid supplier phone number </string>
+</resources>

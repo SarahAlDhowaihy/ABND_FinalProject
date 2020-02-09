@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusedByDefault="false"
+        android:paddingTop="@dimen/padding"
+        android:orientation="vertical">
+        <!-- Overview -->
+        <LinearLayout style="@style/LinerLayoutParentStyle">
+
+            <TextView
+                style="@style/DetailsTextViewStyle"
+                android:text="@string/label_overview" />
+
+            <LinearLayout style="@style/LinerLayoutChildStyle">
+
+                <EditText
+                    android:id="@+id/product_name"
+                    style="@style/DetailsFieldStyle"
+                    android:hint="@string/name_hint" />
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                <EditText
+                    android:id="@+id/product_price"
+                    style="@style/DetailsFieldStyle"
+                    android:hint="@string/price_hint"
+                    android:inputType="number" />
+                    <TextView
+                        android:text="@string/price_units"
+                        style="@style/PriceUnit"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Quantity  -->
+        <LinearLayout style="@style/LinerLayoutParentStyle">
+
+            <TextView
+                style="@style/DetailsTextViewStyle"
+                android:text="@string/product_quantity_text" />
+
+            <LinearLayout
+                style="@style/LinerLayoutChildStyle"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrease_quantity"
+                    style="@style/QuantityButtonStyle"
+                    android:background="@mipmap/ic_decrease" />
+
+                <EditText
+                    android:id="@+id/product_quantity"
+                    style="@style/QuantityEditTextStyle"
+                    android:hint="@string/quantity_hint" />
+
+
+                <Button
+                    android:id="@+id/increase_quantity"
+                    style="@style/QuantityButtonStyle"
+                    android:background="@mipmap/ic_increase" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Image -->
+        <LinearLayout style="@style/LinerLayoutParentStyle">
+
+            <TextView
+                style="@style/DetailsTextViewStyle"
+                android:text="@string/label_image" />
+
+            <LinearLayout
+                style="@style/LinerLayoutChildStyle"
+                android:orientation="horizontal">
+
+                <EditText
+                    style="@style/DetailsFieldStyle"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/hint_product_image"
+                    android:paddingRight="@dimen/padding" />
+
+                <Button
+                    android:id="@+id/image_upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_image_text"
+                    android:theme="@style/ButtonStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Supplier -->
+        <LinearLayout style="@style/LinerLayoutParentStyle">
+
+            <TextView
+                style="@style/DetailsTextViewStyle"
+                android:text="@string/label_supplier" />
+
+            <LinearLayout style="@style/LinerLayoutChildStyle">
+
+                <EditText
+                    android:id="@+id/product_supplier_name"
+                    style="@style/DetailsFieldStyle"
+                    android:hint="@string/supplier_name_hint" />
+
+                <EditText
+                    android:id="@+id/product_supplier_phone"
+                    style="@style/DetailsFieldStyle"
+                    android:hint="@string/supplier_phone_hint"
+                    android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout style="@style/LinerLayoutParentStyle">
+
+            <ImageView
+                android:id="@+id/product_image"
+                style="@style/ImageViewStyle" />
+
+            <Button
+                android:id="@+id/order_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/padding"
+                android:text="@string/order_button_text"
+                android:theme="@style/ButtonStyle" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
